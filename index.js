@@ -58,8 +58,21 @@ export const burger = {
   name: "Burger", 
   price: 18, 
   category: "Lunch", 
-  /*Your code here*/
+  discount: function(people){
+    if(people.toLowerCase() === "teacher"){
+      this.price = 18 * 0.75;
+    }else if(people.toLowerCase() === "student"){
+      this.price = 18 * 0.75;
+    }else if(people.toLowerCase()){
+      this.price = 18 * 0.90;
+    }
+    return this.price;
+  }
 }
+
+console.log(burger.discount("teacher"));
+console.log(burger.discount("public"));
+console.log('task 2 complete');
 
 
 
