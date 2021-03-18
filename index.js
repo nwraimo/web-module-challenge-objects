@@ -13,10 +13,12 @@ The function should:
   2. Create and return an object using the received values 
   
   Example createMenuItem('tacos', 8, 'Lunch') should return {name: 'tacos', price: 8, category: 'Lunch'}
+
+  just like createPet function
 */
 
-function createMenuItem(/*Your code here*/){
-    /*Your code here*/
+function createMenuItem(name, price, category){
+    return {name, price, category};
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1b: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -27,7 +29,13 @@ Test your createMenuItems function by doing the following:
   3. Log each returned object to the console  
   
   For example: createMenuItem("pizza",5,"lunch") would return this as the object: {name:"Pizza",price:5,category:"lunch"}
+
+  
 */
+
+console.log(createMenuItem('Pizza', 3, 'Lunch'));
+console.log(createMenuItem('Sliders', 6, 'Dinner'));
+console.log(createMenuItem('Steak', 15, 'Supper'));
 
 
 
@@ -42,6 +50,8 @@ Using the burger object below do the following:
   4. Check your work by invoking the function and passing in 'teacher', 'student', or 'public' as your arguments to ensure they are returning the correct price.
 
   For example: burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2
+  
+  review how we added a method to dog in guided project**
 */
 
 export const burger = {
@@ -68,9 +78,11 @@ const reviews = [
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
+
+  reference the array and then the index and dot into the feedback
 */
 
-
+console.log('task 3 complete:', reviews[5].feedback);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -85,6 +97,8 @@ Using the reviews array above do the following: (no function needed)
 Reyna's feedback is missing! Use what you know to do the following: (no function needed) 
   1. Add this feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
   2. log the reviews array to the console to check your work
+
+  updating the missing feedback, look at updateRegion in guided project
 */
 
 
@@ -99,6 +113,8 @@ Use the getReviewByIndex function below to do the following:
   2. Receive a number which is the desired index in the array
   3. The function should return the following string: "{name} gave the restaurant a {rating} star review, and their feedback was: {feedback}"
   For example: getReviewByIndex(reviews,0) would return: "Daniela gave the restaurant a 5 star review, and their feedback was: Beautiful atmosphere and wonderful vegan options!"
+
+  review updating without a function
 */
 
 
@@ -121,7 +137,7 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(/*Your code here*/) {
+function getLastReview(array) {
   /*Your code here*/
 } 
 
